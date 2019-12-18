@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.Header {
+    display: grid;
+    Grid-gap: 10px;
+    background-color: darkblue;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Header p {
+    color: #fff;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+}
+.contact-number {
+    padding: 30px 10px 0px 200px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px 40px;
+    list-style-type: none;
+}
+.navbar a {
+    background: darkblue;
+    text-decoration: none;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background: rgb(38, 2, 54);
+    color: red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#services {
+    background: darkblue;
+    text-decoration: none;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+#services:hover {
+    background: rgb(38, 2, 54);
+    color: red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#jobs {
+    background: darkblue;
+    text-decoration: none;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+#jobs:hover {
+    background: rgb(38, 2, 54);
+    color: red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.dropdown #services:hover {
+    color: red;
+    background: rgb(38, 2, 54)
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    padding: 12px 16px;
+    z-index: 1;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content .drop:hover {
+    color: red;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+    background: darkgray;
+}
+
+.dropdown1 {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 70px 5px 20px;
+}
+.dropdown1 #jobs:hover {
+    color: red;
+    background: rgb(38, 2, 54)
+}
+
+.dropdown1-content {
+    position: relative;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 50%;
+    padding: 12px 16px;
+    z-index: 1;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+.dropdown1-content .drop:hover {
+    color: red;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+    background: darkgray;
+}
+
+.showcase {
+    display:Grid;
+    Grid-gap: 0px;
+    Grid-template-areas:
+          'Different Different About';
+}
+.Different {
+    grid-area: Different;
+    min-height: 400px;
+    width: 900px;
+    background: url(/images/CaringNurse.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: unset;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(46, 6, 78);
+    
+}
+.Different h3 {
+    font-size: 2rem;
+    padding-top: 80px;
+    
+}    
+.Different h4 {
+    font-size: 1.5rem;
+    padding-top: 200px;
+    font-weight: bold;
+}
+.About {
+    background:purple;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #fff;
+}
+.About .para {
+    font-weight:bold;
+    color: #fff;
+    padding: 5px;
+}
+.About-us {
+    padding: 10px 30px 2px 20px;
+    background: orangered;
+}
+.showcase1 {
+    display:Grid;
+    Grid-gap: 0px;
+    Grid-template-areas:
+          'Healthcare slogan slogan';
+}
+.Healthcare {
+    padding :20px;
+    background: orangered;
+    font-size: 1.2rem;
+}
+.Whoweare {
+    font-weight: bold;
+    padding: 20px;
+    color: #000;
+}    
+.experience {
+    background:purple;
+    padding: 20px;
+    color: #fff;
+}
+.slogan h3 {
+    font-weight:bold;
+    color:red;
+    padding-top: 120px;
+    font-size: 1.5rem;
+}  
+.slogan {
+    grid-area: slogan;
+    min-height: 400px;
+    width: 900px;
+    background: url(/images/BlackNurse.jpg);
+    background-size: cover;
+    background-position: left;
+    display:flex;
+    flex-direction: unset;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(46, 6, 78);
+}
+.showcase2 {
+    display:Grid;
+    Grid-gap: 0px;
+    Grid-template-areas:
+          'Different Different About';
+}
+.Different1 {
+    grid-area: Different;
+    min-height: 400px;
+    height: 450px;
+    width: 900px;
+    background: url(/images/Receptionist1.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    color: rgb(46, 6, 78);
+    
+}
+.Different1 h3 {
+    font-size: 1.5rem;
+}    
+.Different1 h4 {
+    font-size: 1.3rem;
+}
+.Different1 h3, h4 {
+    padding: 0 0 0 500px;
+    font-weight: bold;
+    color: #000;
+}
+.About1 {
+    background:purple;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #000;
+}
+.About1 .para1 {
+    font-weight:bold;
+    color: #000;
+    padding: 5px;
+}
+.About-us1 {
+    padding: 10px 30px 2px 20px;
+    background: orangered;
+}
+.contact {
+    display: flex;
+    background: greenyellow;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px 50px 20px 50px;
+    color: #fff;
+}
+.contact .phone {
+    background: darkblue;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 80px 10px 80px;
+    
+}
+
+
+footer span {
+    background: darkblue;
+    display:flex;
+}
+footer span img {
+        margin-left: 250px;
+} 
+footer span p {
+    color: black;
+    text-transform: initial;
+    margin-left: 100px;
+    font-family:serif;
+    font-weight:lighter;
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .Header p {
+        color: #fff;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 0.8rem;
+    }
+    .contact-number {
+        padding:80px 0 0 0;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    .navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 30px;
+}
+.showcase {
+    display: block;
+    
+}
+.Different {
+    width: auto;
+}
+.Different h4 {
+    padding-left: 0;
+}
+
+.showcase1 {
+    display: block;
+}
+.slogan {
+    width: auto;
+}
+.showcase2 {
+    display: block;
+}
+.Different1 {
+   width: auto;
+}
+.Different1 h3,h4 {
+    padding-left: 10px;
+}
+.contact {
+    display: grid;
+    grid-template-areas: 
+    'contact info contact info'
+    'phone phone';
+}
+footer {
+    display: block;
+}   
+}
