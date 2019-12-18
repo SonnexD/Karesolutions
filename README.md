@@ -1,0 +1,1 @@
+# Karesolutions is an Interactive Web Project for Karesolutions, a Healthcare Service Provider based in Derby, UK. The whole of this Projrct is to generate Immense traffic to the Business and hence Sales Conversions.
